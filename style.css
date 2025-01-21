@@ -232,28 +232,29 @@
 /* curriculum section  */
 
 .curriculum {
-    padding: 2rem 3rem;
-    background: url("assets/bg.png") ,#F7F7F7;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    padding: 2rem 3rem 2.7rem;
+    background: url("assets/bg.png"), #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
 
-.curriculum a{
+.curriculum a {
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
 }
-.curriculum i{
-font-size: 2rem;
-font-weight: bolder;
-margin: 5rem .7rem 1rem;
-background-color: var(--first-color);
-border-radius: 60%;
-padding: 9px 15px;
+
+.curriculum i {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 5rem .7rem 1rem;
+    background-color: var(--first-color);
+    border-radius: 60%;
+    padding: 9px 15px;
 }
 
 
@@ -268,7 +269,7 @@ padding: 9px 15px;
 .curriculum-items1 {
     text-align: center;
     width: 30%;
-    height:350px;
+    height: 350px;
     padding: 3rem 1rem;
     display: flex;
     flex-direction: column;
@@ -290,7 +291,7 @@ padding: 9px 15px;
 .curriculum-items2 {
     text-align: center;
     width: 30%;
-    height:350px;
+    height: 370px;
     padding: 3rem 1rem;
     display: flex;
     flex-direction: column;
@@ -312,9 +313,9 @@ padding: 9px 15px;
 .curriculum-items3 {
     text-align: center;
     width: 30%;
-    height:350px;
+    height: 420px;
 
-        padding: 1.5rem .7rem;
+    padding: 1.5rem .7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -334,35 +335,119 @@ padding: 9px 15px;
 
 /* making curriculum responsive  */
 
-@media screen and (max-width:865px){
-    
-    .curriculum-container{
+@media screen and (max-width:865px) {
+
+    .curriculum-container {
         flex-direction: column;
     }
 
 
-    .curriculum-items1{
+    .curriculum-items1 {
         width: 100%;
-            padding: 1.5rem .7rem;
+        padding: 1.5rem .7rem;
         height: auto;
     }
 
 
-    .curriculum-items2{
+    .curriculum-items2 {
         width: 100%;
-            padding: 1.5rem .7rem;
+        padding: 1.5rem .7rem;
         height: auto;
     }
 
 
-    .curriculum-items3{
+    .curriculum-items3 {
         width: 100%;
-            padding: 1.5rem .7rem;
+        padding: 1.5rem .7rem;
         height: auto;
     }
 
 
-    .curriculum-icons{
+    .curriculum-icons {
         display: none;
+    }
+}
+
+
+/* stories section  */
+
+
+
+
+/* footer  */
+
+footer {
+    padding: 7rem 1.5rem;
+    color: white;
+    background-color: #05c6c9;
+}
+
+
+.footer-container {
+    display: flex;
+    gap: 5rem;
+
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+
+.footer-items1-flex {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+.footer-items1 {
+    flex: 2;
+}
+
+.footer-items2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.footer-items3 {
+    flex: 1;
+}
+
+
+.footer-items2 ul {
+    list-style: none;
+}
+
+.footer-items2 ul li {
+    margin: 1rem 0;
+
+}
+
+.footer-items2 ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.footer-items3 img {
+    width: 18%;
+    cursor: pointer;
+}
+
+
+/* make footer responsive */
+
+@media screen and (max-width:865px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footer-items1-flex {
+        justify-content: flex-start;
+        margin-bottom: 2rem;
     }
 }
