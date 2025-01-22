@@ -160,7 +160,7 @@
     padding: 2rem 3rem 2.7rem;
     background: url("assets/bg.png"), #F7F7F7;
     display: flex;
-    background-position: center center;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -203,8 +203,7 @@
     align-items: center;
     gap: 2rem;
     border-radius: 1.3rem;
-
-    box-shadow: 0 0 28px 1px rgba(0, 0, 0, 0.05);
+ box-shadow: 0 0 28px 1px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180.00deg, rgba(222, 245, 255, 1) 0%, rgba(255, 255, 255, 0) 40%);
 
 }
@@ -267,7 +266,7 @@
 
 
 .stories {
-    background: url("assets/bg.png"), linear-gradient(0.00deg, rgba(254, 163, 1, .2) 0%, rgba(255, 255, 255, 1) 125%);
+    background: url("assets/bg.png"), linear-gradient(0.00deg, rgba(254, 163, 1, .2) 0%, rgba(255, 255, 255, 1) 70%);
     background-size: contain;
     padding: 3rem 5rem;
 
@@ -287,7 +286,7 @@
 }
 
 .stories .different-btn {
-    padding: .5rem 3rem;
+    padding: .3rem 3rem;
     background-color: black;
     font-size: 1.1rem;
     font-weight: 700;
@@ -336,14 +335,14 @@
 .stories-items-texts {
     padding: 0 1rem;
     display: flex;
-    margin-top: -3.2rem;
+    margin-top: -3.4rem;
     flex-direction: column;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
 .exceptional .stories-items-texts {
-    padding: 0 2rem;
+    padding: 0 1.3rem;
 }
 
 .stories-items-texts button {
@@ -587,7 +586,7 @@ footer {
     .stories-container {
         display: grid;
         gap: 1rem;
-        gap: .3rem;
+        gap: .8rem;
         grid-template-areas:
             " item2 item3"
             " item4 item5"
@@ -598,15 +597,20 @@ footer {
 
     .stories-items-texts {
         padding: 0 .5rem;
-        margin-top: -2.8rem;
+        margin-top: -3rem;
     }
-
+    .stories-items-texts h3{
+      font-size: .75rem;
+    }
+   
     .stories-items-texts button {
         height: 2rem;
         width: 7rem;
         font-size: .6rem;
     }
-
+    .stories-items5 .stories-items-texts{
+        margin-top: -3.8rem;
+    }
     /* make footer responsive */
 
 
