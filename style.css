@@ -569,7 +569,7 @@ footer {
 
 
     .stories {
-        padding: 3rem .5rem;
+        padding: 3rem 1rem;
         width: auto;
 
     }
@@ -603,8 +603,8 @@ footer {
 
     .stories-items-texts button {
         height: 2rem;
-        width: 8rem;
-        font-size: .7rem;
+        width: 7rem;
+        font-size: .6rem;
     }
 
     /* make footer responsive */
