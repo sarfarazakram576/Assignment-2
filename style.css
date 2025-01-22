@@ -91,42 +91,6 @@
     display: none;
 }
 
-/*  header  responsive*/
-
-
-@media screen and (max-width:865px) {
-
-    .header {
-        padding: 2rem 1rem;
-        border-bottom: 2px solid var(--first-color);
-    }
-
-
-    .nav-items2 {
-        display: none;
-    }
-
-    .navbar {
-        gap: 4rem;
-    }
-
-    .nav-items3 {
-        display: none;
-
-    }
-
-
-    .nav-items4 {
-        display: flex;
-
-    }
-
-    .nav-items4 i {
-        font-size: 2.5rem;
-    }
-
-}
-
 
 /* banner section  */
 
@@ -184,49 +148,10 @@
 }
 
 
-/* making banner section responsive */
 
 
-@media screen and (max-width:865px) {
-
-    .banner {
-        margin-top: 1rem;
-        padding: 2rem 1rem;
-    }
 
 
-    .banner-container {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-
-    .banner-items1 {
-        width: 100%;
-
-    }
-
-
-    .banner-items2 {
-        width: 100%;
-    }
-
-    .banner-items2 h1 {
-        text-align: center;
-
-        font-size: 2.7rem;
-        width: 98%;
-    }
-
-    .banner-items2 {
-        width: 98%;
-    }
-
-    .banner-items2 {
-        width: 98%;
-    }
-
-}
 
 
 /* curriculum section  */
@@ -235,6 +160,7 @@
     padding: 2rem 3rem 2.7rem;
     background: url("assets/bg.png"), #F7F7F7;
     display: flex;
+    background-position: center center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -269,7 +195,7 @@
 .curriculum-items1 {
     text-align: center;
     width: 30%;
-    height: 350px;
+    height: 370px;
     padding: 3rem 1rem;
     display: flex;
     flex-direction: column;
@@ -333,53 +259,145 @@
 
 }
 
-/* making curriculum responsive  */
-
-@media screen and (max-width:865px) {
-
-    .curriculum-container {
-        flex-direction: column;
-    }
 
 
-    .curriculum-items1 {
-        width: 100%;
-        padding: 1.5rem .7rem;
-        height: auto;
-    }
-
-
-    .curriculum-items2 {
-        width: 100%;
-        padding: 1.5rem .7rem;
-        height: auto;
-    }
-
-
-    .curriculum-items3 {
-        width: 100%;
-        padding: 1.5rem .7rem;
-        height: auto;
-    }
-
-
-    .curriculum-icons {
-        display: none;
-    }
-}
 
 
 /* stories section  */
 
 
+.stories {
+    background: url("assets/bg.png"), linear-gradient(0.00deg, rgba(254, 163, 1, .2) 0%, rgba(255, 255, 255, 1) 125%);
+    background-size: contain;
+    padding: 3rem 5rem;
 
+}
+
+
+.stories-container {
+    display: grid;
+    gap: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+
+    grid-template-areas:
+        "item1 item1 item2 item3"
+        "item1 item1 item6 item7"
+    ;
+}
+
+.stories .different-btn {
+    padding: .5rem 3rem;
+    background-color: black;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: .7rem;
+    border: 3px solid black;
+}
+
+.stories .different-btn:hover {
+    background-color: transparent;
+    color: black;
+    border: 3px solid black;
+}
+
+.stories-items1 {
+    grid-area: item1;
+}
+
+.stories-items2 {
+    grid-area: item2;
+}
+
+.stories-items3 {
+    grid-area: item3;
+}
+
+.stories-items4 {
+    grid-area: item4;
+}
+
+.stories-items5 {
+    grid-area: item5;
+}
+
+.stories-items6 {
+    grid-area: item6;
+}
+
+.stories-items7 {
+    grid-area: item7;
+}
+
+
+.stories-items-texts {
+    padding: 0 1rem;
+    display: flex;
+    margin-top: -3.2rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.exceptional .stories-items-texts {
+    padding: 0 2rem;
+}
+
+.stories-items-texts button {
+    height: 3rem;
+    width: 11rem;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+.stories-items-texts h2 {
+    font-size: 1.6rem;
+}
+
+.stories-items-texts h3 {
+    font-size: 1.1rem;
+}
+
+.stories-items-texts p {
+    font-size: .8rem;
+    line-height: 1.3rem;
+    margin: 1rem 0;
+}
+
+.stories-item {
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    height: auto;
+    border: none;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.stories-item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.stories-items4,
+.stories-items5 {
+    display: none;
+}
 
 /* footer  */
 
 footer {
+    margin-right: .5rem;
     padding: 7rem 1.5rem;
     color: white;
-    background-color: #05c6c9;
+    background-color: #05d7db;
 }
 
 
@@ -407,14 +425,9 @@ footer {
 .footer-items2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 3rem;
     flex: 1;
 }
-
-.footer-items3 {
-    flex: 1;
-}
-
 
 .footer-items2 ul {
     list-style: none;
@@ -429,6 +442,12 @@ footer {
     color: white;
     text-decoration: none;
     font-weight: 600;
+    text-align: left;
+}
+
+
+.footer-items3 {
+    flex: 1;
 }
 
 
@@ -438,9 +457,159 @@ footer {
 }
 
 
-/* make footer responsive */
+/* I set the breakpoint on 865px because of making the fully responsive both for tablet and mobile in one media query*/
+
 
 @media screen and (max-width:865px) {
+
+    /* make header responsive */
+    .header {
+        padding: 2rem 1rem;
+        border-bottom: 2px solid var(--first-color);
+    }
+
+
+    .nav-items2 {
+        display: none;
+    }
+
+    .navbar {
+        gap: 4rem;
+    }
+
+    .nav-items3 {
+        display: none;
+
+    }
+
+
+    .nav-items4 {
+        display: flex;
+
+    }
+
+    .nav-items4 i {
+        font-size: 2.5rem;
+    }
+
+
+    /* making banner section responsive */
+
+    .banner {
+        margin-top: 1rem;
+        padding: 2rem 1rem;
+    }
+
+
+    .banner-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+
+    .banner-items1 {
+        width: 100%;
+
+    }
+
+
+    .banner-items2 {
+        width: 100%;
+    }
+
+    .banner-items2 h1 {
+        text-align: center;
+
+        font-size: 2.7rem;
+        width: 98%;
+    }
+
+    .banner-items2 {
+        width: 98%;
+    }
+
+    .banner-items2 {
+        width: 98%;
+    }
+
+
+    /* making curriculum responsive  */
+
+
+    .curriculum-container {
+        flex-direction: column;
+    }
+
+
+    .curriculum-items1 {
+        width: 100%;
+        padding: 1.5rem .7rem;
+        height: auto;
+    }
+
+
+    .curriculum-items2 {
+        width: 100%;
+        padding: 1.5rem .7rem;
+        height: auto;
+    }
+
+
+    .curriculum-items3 {
+        width: 100%;
+        padding: 1.5rem .7rem;
+        height: auto;
+    }
+
+
+    .curriculum i{
+        display: none;
+    }
+    /* make stories responsive */
+
+
+    .stories {
+        padding: 3rem .5rem;
+        width: auto;
+
+    }
+
+    .exceptional {
+        display: none;
+    }
+
+    .stories-items4,
+    .stories-items5 {
+        display: grid;
+    }
+
+
+    .stories-container {
+        display: grid;
+        gap: 1rem;
+        gap: .3rem;
+        grid-template-areas:
+            " item2 item3"
+            " item4 item5"
+            " item6 item7"
+        ;
+
+    }
+
+    .stories-items-texts {
+        padding: 0 .5rem;
+        margin-top: -2.8rem;
+    }
+
+    .stories-items-texts button {
+        height: 2rem;
+        width: 8rem;
+        font-size: .7rem;
+    }
+
+    /* make footer responsive */
+
+
     .footer-container {
         flex-direction: column;
         gap: 3rem;
@@ -449,5 +618,16 @@ footer {
     .footer-items1-flex {
         justify-content: flex-start;
         margin-bottom: 2rem;
+    }
+
+
+    .footer-items2 {
+        margin-left: 0;
+    }
+
+
+    footer {
+        margin-right: 0;
+        padding: 7rem 3rem;
     }
 }
